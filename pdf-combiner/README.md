@@ -1,124 +1,112 @@
 # PDF Combiner Utility 📄🔗
 
-A fast, lightweight, pure-Rust command-line utility to merge multiple PDF files sequentially into a single target file.
+> A fast, lightweight, pure-Rust command-line utility for merging multiple PDF files sequentially into a single output document.
 
 ---
 
-## ⚙️ Compilation & Global Setup
+## ✨ Features
 
-To compile the optimized native Linux binary and install it globally as a system command, execute the following commands from this directory:
+- ⚡ Fast native performance (Rust-powered)
+- 🪶 Lightweight with minimal overhead
+- 📄 Merge multiple PDF files in sequence
+- 🔧 Simple CLI workflow
+- 🌍 Global system-wide installation support
+
+---
+
+## ⚙️ Compilation & Global Installation
+
+Build the optimized release binary and install it as a globally accessible command:
 
 ```bash
-# 1. Build the optimized release binary
+# Build optimized release binary
 cargo build --release
 
-# 2. Copy the binary to your local system path
+# Install globally
 sudo cp target/release/pdf-combiner /usr/local/bin/combine-pdf
 sudo chmod +x /usr/local/bin/combine-pdf
 ```
 
-## 📦 Detailed System-Wide Installation Guide
+---
 
-Deploying the utility system-wide moves the binary into the system’s global executable path, allowing the command to be run from any location.
+## 📦 Installation Methods
 
-### Installation Procedures
+### Method 1 — Build From Source (Recommended)
 
-Choose one of the two methods below to register the utility on your machine:
+Use this method if you want the latest build directly from source.
 
-#### Method A: Direct Deployment (Pre-Compiled Binary)
+```bash
+cargo build --release
+sudo cp target/release/pdf-combiner /usr/local/bin/combine-pdf
+sudo chmod +x /usr/local/bin/combine-pdf
+```
 
-If you already have the compiled binary available:
+---
+
+### Method 2 — Install Pre-Compiled Binary
+
+If you already have a compiled binary available:
 
 ```bash
 sudo cp pdf-combiner/target/release/pdf-combiner /usr/local/bin/combine-pdf
 sudo chmod +x /usr/local/bin/combine-pdf
 ```
 
-Verify the installation:
+---
+
+## ✅ Verify Installation
+
+Confirm the command is available system-wide:
 
 ```bash
 which combine-pdf
 combine-pdf --help
-```# PDF Combiner Utility 📄🔗
+```
 
-A fast, lightweight, pure-Rust command-line utility to merge multiple PDF files sequentially into a single target file.
+Expected output:
+
+```bash
+/usr/local/bin/combine-pdf
+```
 
 ---
 
-## ⚙️ Compilation & Global Setup
+## 🚀 Usage
 
-To compile the optimized native Linux binary and install it globally as a system command, execute the following commands from this directory:
+Basic usage:
 
 ```bash
-# 1. Build the optimized release binary
-cargo build --release
-
-# 2. Copy the binary to your local system path
-sudo cp target/release/pdf-combiner /usr/local/bin/combine-pdf
-sudo chmod +x /usr/local/bin/combine-pdf
+combine-pdf file1.pdf file2.pdf file3.pdf output.pdf
 ```
 
-## 📦 Detailed System-Wide Installation Guide
+Example:
 
-Deploying the utility system-wide moves the binary into the system’s global executable path, allowing the command to be run from any location.
-
-#### PDF Combiner Utility 📄🔗
-
-A fast, lightweight, pure-Rust command-line utility to merge multiple PDF files sequentially into a single target file.
+```bash
+combine-pdf invoice.pdf appendix.pdf contract.pdf merged-document.pdf
+```
 
 ---
 
-## ⚙️ Compilation & Global Setup
+## 🛠 Requirements
 
-To compile the optimized native Linux binary and install it globally as a system command, execute the following commands from this directory:
+Before building from source, ensure you have:
+
+- Rust toolchain installed
+- Cargo package manager
+- Linux environment with `/usr/local/bin` in your PATH
+
+Install Rust if needed:
 
 ```bash
-# 1. Build the optimized release binary
-cargo build --release
-
-# 2. Copy the binary to your local system path
-sudo cp target/release/pdf-combiner /usr/local/bin/combine-pdf
-sudo chmod +x /usr/local/bin/combine-pdf
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-## 📦 Detailed System-Wide Installation Guide
+---
 
-Deploying the utility system-wide moves the binary into the system’s global executable path, allowing the command to be run from any location.
+## 📁 Binary Location
 
-### Installation Procedures
-
-Choose one of the two methods below to register the utility on your machine:
-
-#### Method A: Direct Deployment (Pre-Compiled Binary)
-
-If you already have the compiled binary available:
+Installed executable path:
 
 ```bash
-sudo cp pdf-combiner/target/release/pdf-combiner /usr/local/bin/combine-pdf
-sudo chmod +x /usr/local/bin/combine-pdf
-```
-
-Verify the installation:
-
-```bash
-which combine-pdf
-combine-pdf --help
-``` Installation Procedures
-
-Choose one of the two methods below to register the utility on your machine:
-
-#### Method A: Direct Deployment (Pre-Compiled Binary)
-
-If you already have the compiled binary available:
-
-```bash
-sudo cp pdf-combiner/target/release/pdf-combiner /usr/local/bin/combine-pdf
-sudo chmod +x /usr/local/bin/combine-pdf
-```
-
-Verify the installation:
-
-```bash
-which combine-pdf
-combine-pdf --help
+/usr/local/bin/combine-pdf
 ```
