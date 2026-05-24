@@ -1,112 +1,34 @@
-# PDF Combiner Utility 📄🔗
+# Linux Open-Source Utilities Collection 🛠️
 
-> A fast, lightweight, pure-Rust command-line utility for merging multiple PDF files sequentially into a single output document.
+Welcome to `linux_utils`! This repository is a growing compilation of high-performance, open-source command-line utilities optimized for Linux systems and written natively in Rust. 
 
----
-
-## ✨ Features
-
-- ⚡ Fast native performance (Rust-powered)
-- 🪶 Lightweight with minimal overhead
-- 📄 Merge multiple PDF files in sequence
-- 🔧 Simple CLI workflow
-- 🌍 Global system-wide installation support
+The goal of this project is to provide fast, dependency-free, and minimal binary replacements for common system tasks.
 
 ---
 
-## ⚙️ Compilation & Global Installation
+## 🚀 Available Utilities
 
-Build the optimized release binary and install it as a globally accessible command:
-
-```bash
-# Build optimized release binary
-cargo build --release
-
-# Install globally
-sudo cp target/release/pdf-combiner /usr/local/bin/combine-pdf
-sudo chmod +x /usr/local/bin/combine-pdf
-```
+| Utility Directory | Global Command | Description |
+| :--- | :--- | :--- |
+| [📂 `pdf-combiner/`](./pdf-combiner) | `combine-pdf` | Merges multiple sequential PDF documents into a single target file. |
 
 ---
 
-## 📦 Installation Methods
+## ⚙️ General Installation
 
-### Method 1 — Build From Source (Recommended)
+Each utility in this repository lives within its own self-contained subdirectory, complete with pre-compiled performance binaries and specific execution examples.
 
-Use this method if you want the latest build directly from source.
-
-```bash
-cargo build --release
-sudo cp target/release/pdf-combiner /usr/local/bin/combine-pdf
-sudo chmod +x /usr/local/bin/combine-pdf
-```
+To install a utility globally:
+1. Click into the utility's directory listed in the table above.
+2. Read its dedicated `README.md` guide for specific syntax rules.
+3. Follow the standard compilation or direct pre-compiled binary copy commands.
 
 ---
 
-### Method 2 — Install Pre-Compiled Binary
+## 🤝 Contributing
 
-If you already have a compiled binary available:
-
-```bash
-sudo cp pdf-combiner/target/release/pdf-combiner /usr/local/bin/combine-pdf
-sudo chmod +x /usr/local/bin/combine-pdf
-```
-
----
-
-## ✅ Verify Installation
-
-Confirm the command is available system-wide:
-
-```bash
-which combine-pdf
-combine-pdf --help
-```
-
-Expected output:
-
-```bash
-/usr/local/bin/combine-pdf
-```
-
----
-
-## 🚀 Usage
-
-Basic usage:
-
-```bash
-combine-pdf file1.pdf file2.pdf file3.pdf output.pdf
-```
-
-Example:
-
-```bash
-combine-pdf invoice.pdf appendix.pdf contract.pdf merged-document.pdf
-```
-
----
-
-## 🛠 Requirements
-
-Before building from source, ensure you have:
-
-- Rust toolchain installed
-- Cargo package manager
-- Linux environment with `/usr/local/bin` in your PATH
-
-Install Rust if needed:
-
-```bash
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-```
-
----
-
-## 📁 Binary Location
-
-Installed executable path:
-
-```bash
-/usr/local/bin/combine-pdf
-```
+This is an open-source project! If you want to add a tool, optimize existing logic, or submit improvements:
+1. Fork the repository.
+2. Create your tool inside a dedicated subfolder.
+3. Include a detailed usage guide (`README.md`) inside your subfolder.
+4. Submit a Pull Request!
